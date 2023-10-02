@@ -25,32 +25,34 @@
   </head>
   <body>
     <main>
+      <header class="header flex">
+        <a href="#"><img src="./images/logo.svg" alt="" class="logo" /></a>
+
+        <nav class="main-nav">
+          <ul class="main-nav-list flex">
+            <li class="main-nav-link">About</li>
+            <li class="main-nav-link">Services</li>
+            <li class="main-nav-link">Projects</li>
+            <li class="main-nav-link">
+              <a href="#" class="contact-nav-btn">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- <button class="mobile-nav"></button> -->
+      </header>
+
       <section class="hero-section grid">
-        <header>
-          <a href="#"><img src="" alt="" class="logo" /></a>
+        <div class="hero-content flex flex-col">
+          <h1 class="heading-primary">We are creatives</h1>
 
-          <nav class="main-nav">
-            <ul class="main-nav-list">
-              <li class="main-nav-link">About</li>
-              <li class="main-nav-link">Services</li>
-              <li class="main-nav-link">Projects</li>
-              <li class="main-nav-link">
-                <a href="#" class="contact-nav-btn">Contact</a>
-              </li>
-            </ul>
-          </nav>
-
-          <button class="mobile-nav"></button>
-        </header>
-        <h1 class="heading-primary">We are creatives</h1>
-        <img
-          src="./images/icon-arrow-down.svg"
-          alt="Image of an arrow pointing down"
-          class="arrow-down"
-        />
+          <img
+            src="./images/icon-arrow-down.svg"
+            alt="Image of an arrow pointing down"
+            class="arrow-down"
+          />
+        </div>
       </section>
-
-      <section class="illustration-egg-section"></section>
 
       <section class="feature-section grid">
         <div class="feature--transform">
@@ -62,7 +64,21 @@
           of the marketing for you. Learn more
         </div>
 
-        <div class="feature--picture"></div>
+        <div class="feature--picture">
+          <img
+            src="./images/desktop/image-transform.jpg"
+            alt=""
+            class="illustration"
+          />
+        </div>
+
+        <div class="feature--picture">
+          <img
+            src="./images/desktop/image-stand-out.jpg"
+            alt=""
+            class="illutration"
+          />
+        </div>
 
         <div class="feature--stand">
           <h2 class="heading-secondary feature-heading">
@@ -72,8 +88,6 @@
           photographers, videographers, and copywriters, we’ll build and extend
           your brand in digital places. Learn more
         </div>
-
-        <div class="feature--picture"></div>
 
         <div class="feature--graphic">
           <h2 class="heading-secondary feature-heading">Graphic design</h2>
