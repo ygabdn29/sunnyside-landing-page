@@ -6,8 +6,8 @@
   --primary-moderate-cyan: hsl(168, 34%, 41%);
   --neutral-darker-desaturated-blue: hsl(212, 27%, 19%);
   --neutral-darker-grayish-blue: hsl(213, 9%, 39%);
-  --neutral--dark-grayish-blue: hsl(232, 10%, 55%);
-  --neutral--grayish-blue: hsl(210, 4%, 67%);
+  --neutral-dark-grayish-blue: hsl(232, 10%, 55%);
+  --neutral-grayish-blue: hsl(210, 4%, 67%);
   --neutral-white: hsl(0, 0%, 100%);
   --fw-semi-bold: 600;
   --fw-bold: 700;
@@ -24,6 +24,13 @@ html {
   box-sizing: border-box;
 }
 
+main {
+  position: relative;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
 .grid {
   display: grid;
 }
@@ -34,10 +41,6 @@ html {
 
 .flex-col {
   flex-direction: column;
-}
-
-body {
-  font-family: "Barlow", sans-serif;
 }
 
 .heading-primary,
@@ -52,10 +55,6 @@ body {
   letter-spacing: 2rem;
   text-align: center;
   text-transform: uppercase;
-}
-
-main {
-  position: relative;
 }
 
 /* HEADER */
@@ -111,6 +110,57 @@ main {
   width: 3.6rem;
 }
 
+/* FEATURE SECTION */
 .feature-section {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.feature {
+  gap: 3.6rem;
+  padding: 16rem 14rem;
+}
+
+.feature-heading {
+  font-size: 5.2rem;
+  color: var(--neutral-darker-desaturated-blue);
+}
+
+.feature--text {
+  color: var(--neutral-dark-grayish-blue);
+  font-size: 1.8rem;
+}
+
+.learn--more {
+  font-family: "Fraunces", serif;
+  font-weight: var(--fw-black);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.feature--picture-transform {
+  background-image: url("./images/desktop/image-transform.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feature--picture-stand {
+  background-image: url("./images/desktop/image-stand-out.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feature--graphic {
+  background-image: url("./images/desktop/image-graphic-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feature--photography {
+  background-image: url("./images/desktop/image-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
