@@ -31,6 +31,7 @@ main {
 body {
   font-family: "Barlow", sans-serif;
 }
+
 .grid {
   display: grid;
 }
@@ -41,6 +42,10 @@ body {
 
 .flex-col {
   flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .heading-primary,
@@ -156,6 +161,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  min-height: 65rem;
+  place-items: end;
 }
 
 .feature--photography {
@@ -163,4 +171,120 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  min-height: 65rem;
+  place-items: end;
+}
+
+.feature--heading-graphic,
+.feature--heading-photography {
+  font-size: 3.2rem;
+  font-weight: var(--fw-black);
+}
+
+.feature--heading-graphic,
+.feature--text-graphic {
+  color: var(--primary-dark-desaturated-cyan);
+}
+
+.feature--heading-photography,
+.feature--text-photography {
+  color: var(--primary-dark-blue);
+}
+
+.feature--text-box {
+  padding: 6.4rem 17rem;
+  gap: 3em;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials-section {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 9.6rem;
+  row-gap: 4.8rem;
+  column-gap: 4.8rem;
+
+  background-color: var(--neutral-white);
+}
+
+.client--testimonials-heading {
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+.client--testimonial {
+  align-items: center;
+  gap: 4.8rem;
+  font-size: 1.8rem;
+  padding: 1.8rem;
+}
+
+.client--testimonials-heading {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: var(--fw-black);
+  color: var(--neutral-grayish-blue);
+  letter-spacing: 0.5rem;
+}
+
+.client-picture {
+  width: 7rem;
+  border-radius: 50%;
+}
+
+.testimonial--text {
+  text-align: center;
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.5;
+  color: var(--neutral-darker-grayish-blue);
+}
+
+.client--details {
+  gap: 1.2rem;
+}
+
+.client--name {
+  font-family: "Fraunces", serif;
+}
+
+.client--occupation {
+  font-size: 1.2rem;
+  color: var(--neutral-grayish-blue);
+}
+
+/* ILLUSTRATION SECTION */
+.gallery-section {
+  grid-template-columns: repeat(4, 25%);
+  height: 45rem;
+  align-items: stretch;
+}
+
+.gallery--picture {
+  width: 100%;
+}
+
+/* FOOTER */
+.footer {
+  padding: 6.4rem;
+  background-color: hsl(165, 35%, 59%);
+  align-items: center;
+  gap: 3.6rem;
+}
+
+.footer-logo {
+  fill: var(--primary-dark-desaturated-cyan);
+}
+
+.footer-list {
+  list-style: none;
+  gap: 4.8rem;
+  font-size: 1.8rem;
+  font-weight: var(--fw-semi-bold);
+  color: var(--primary-dark-desaturated-cyan);
+  margin-bottom: 4.8rem;
+}
+
+.social-icon-list {
+  list-style: none;
+  gap: 2.4rem;
 }
