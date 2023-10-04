@@ -1,0 +1,124 @@
+@media (max-width: 64em) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .heading-primary,
+  .heading-secondary {
+    font-family: "Fraunces", serif;
+  }
+
+  .heading-primary {
+    color: var(--neutral-white);
+    font-weight: var(--fw-black);
+    font-size: 3.6rem;
+    letter-spacing: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  /* HERO SECTION */
+  .hero-section {
+    background-image: url("./images/mobile/image-header.jpg");
+    background-position: center;
+  }
+
+  .hero-content {
+    transform: translateY(10%);
+  }
+
+  .heading-primary {
+    font-size: 4rem;
+  }
+
+  /* FEATURE SECTION */
+  .feature-section {
+    padding: 0;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .feature {
+    padding: 7.2rem 3.6rem;
+    text-align: center;
+  }
+
+  .feature-heading {
+    font-size: 3.6rem;
+  }
+
+  .feature--text {
+    font-size: 2.25rem;
+    line-height: 1.5;
+  }
+
+  .feature--picture-transform {
+    padding: 20rem;
+    grid-row: 1;
+    background-image: url("./images/mobile/image-transform.jpg");
+  }
+
+  .feature--picture-stand {
+    padding: 20rem;
+    background-image: url("./images/mobile/image-stand-out.jpg");
+  }
+
+  .feature--graphic {
+    background-image: url("./images/mobile/image-graphic-design.jpg");
+  }
+
+  .feature--photography {
+    background-image: url("./images/mobile/image-photography.jpg");
+  }
+
+  .feature--text-box {
+    padding: 6.4rem 3rem;
+    gap: 3em;
+  }
+
+  /* TESTIMONIALS SECTION */
+  .testimonials-section {
+    padding: 6.4rem 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .client--testimonials-heading {
+    font-size: 1.4rem;
+  }
+
+  .client--testimonial {
+    gap: 2.4rem;
+  }
+
+  .testimonial--text {
+    font-size: 2.25rem;
+  }
+
+  .client--details {
+    gap: 0.8rem;
+  }
+
+  .client--occupation {
+    font-size: 1.4rem;
+  }
+
+  /* GALLERY SECTION */
+  .gallery-section {
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery--picture {
+    display: none;
+  }
+
+  .gallery--picture-mobile {
+    width: 50vw;
+    display: block;
+    object-fit: cover;
+  }
+}

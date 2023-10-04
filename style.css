@@ -133,6 +133,7 @@ body {
 }
 
 .feature-heading {
+  font-weight: var(--fw-black);
   font-size: 5.2rem;
   color: var(--neutral-darker-desaturated-blue);
 }
@@ -290,12 +291,14 @@ body {
 /* ILLUSTRATION SECTION */
 .gallery-section {
   grid-template-columns: repeat(4, 25%);
-  height: 45rem;
-  align-items: stretch;
 }
 
 .gallery--picture {
   width: 100%;
+}
+
+.gallery--picture-mobile {
+  display: none;
 }
 
 /* FOOTER */
@@ -347,4 +350,10 @@ body {
 
 .icon:hover {
   fill: var(--neutral-white);
+}
+
+/* ATTRIBUTION */
+.attribution {
+  padding: 1.8rem;
+  font-size: 1.4rem;
 }
