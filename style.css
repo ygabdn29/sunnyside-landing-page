@@ -93,6 +93,13 @@ body {
   padding: 1.8rem 3rem;
   border-radius: 50px;
   background-color: var(--neutral-white);
+  transition: all 0.3s;
+}
+
+.contact-nav-btn:hover,
+.contact-nav-btn:active {
+  color: var(--neutral-white);
+  background-color: hsl(200, 100%, 72%);
 }
 
 /* HERO SECTION */
@@ -140,6 +147,34 @@ body {
   font-weight: var(--fw-black);
   text-transform: uppercase;
   font-size: 1.8rem;
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.learn--more-transform:link,
+.learn--more-transform:visited {
+  text-decoration: none;
+  color: var(--neutral-darker-desaturated-blue);
+  box-shadow: inset 0em -0.8rem hsla(51, 100%, 49%, 0.3);
+  transition: all 0.3s;
+}
+
+.learn--more-transform:hover,
+.learn--more-transform:active {
+  box-shadow: inset 0em -0.8rem 0 0 var(--primary-Yellow);
+}
+
+.learn--more-stand:link,
+.learn--more-stand:visited {
+  text-decoration: none;
+  color: var(--neutral-darker-desaturated-blue);
+  box-shadow: inset 0em -0.8rem hsla(7, 99%, 70%, 0.3);
+  transition: all 0.3s;
+}
+
+.learn--more-stand:hover,
+.learn--more-stand:active {
+  box-shadow: inset 0em -0.8rem var(--primary-soft-red);
 }
 
 .feature--picture-transform {
@@ -280,11 +315,36 @@ body {
   gap: 4.8rem;
   font-size: 1.8rem;
   font-weight: var(--fw-semi-bold);
-  color: var(--primary-dark-desaturated-cyan);
   margin-bottom: 4.8rem;
 }
 
+.footer--list-link:link,
+.footer--list-link:visited {
+  text-decoration: none;
+  color: var(--primary-dark-desaturated-cyan);
+  transition: all 0.3s;
+}
+
+.footer--list-link:hover,
+.footer--list-link:active {
+  text-decoration: none;
+  color: var(--neutral-white);
+}
+
 .social-icon-list {
+  align-items: center;
   list-style: none;
   gap: 2.4rem;
+}
+
+.social--icon {
+  font-size: 2.4rem;
+}
+
+.icon {
+  fill: var(--primary-dark-desaturated-cyan);
+}
+
+.icon:hover {
+  fill: var(--neutral-white);
 }

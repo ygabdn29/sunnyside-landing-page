@@ -21,6 +21,16 @@
       rel="stylesheet"
     />
 
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -66,35 +76,30 @@
             most of the marketing for you.
           </p>
 
-          <p class="learn--more">Learn more</p>
+          <div class="learn-more-container">
+            <a href="#" class="learn--more learn--more-transform">Learn more</a>
+            <p></p>
+          </div>
         </div>
 
-        <div class="feature--picture-transform">
-          <!-- <img
-            src="./images/desktop/image-transform.jpg"
-            alt=""
-            class="feature--illustration"
-          /> -->
-        </div>
+        <div class="feature--picture-transform"></div>
 
-        <div class="feature--picture-stand">
-          <!-- <img
-            src="./images/desktop/image-stand-out.jpg"
-            alt=""
-            class="feature--illustration"
-          /> -->
-        </div>
+        <div class="feature--picture-stand"></div>
 
         <div class="feature feature--stand flex flex-col">
           <h2 class="heading-secondary feature-heading">
             Stand out to the right audience
           </h2>
+
           <p class="feature--text">
             Using a collaborative formula of designers, researchers,
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.
           </p>
-          <p class="learn--more">Learn more</p>
+
+          <div class="learn-more-container">
+            <a href="#" class="learn--more learn--more-stand">Learn more</a>
+          </div>
         </div>
 
         <div class="feature--graphic grid">
@@ -239,33 +244,52 @@
         </div>
 
         <ul class="footer-list flex">
-          <li class="footer--list-item">About</li>
-          <li class="footer--list-item">Services</li>
-          <li class="footer--list-item">Projects</li>
+          <li class="footer--list-item">
+            <a href="#" class="footer--list-link">About</a>
+          </li>
+
+          <li class="footer--list-item">
+            <a href="#" class="footer--list-link">Services</a>
+          </li>
+
+          <li class="footer--list-item">
+            <a href="#" class="footer--list-link">Projects</a>
+          </li>
         </ul>
 
         <ul class="social-icon-list flex">
           <li class="social--icon">
-            <img src="./images/icon-facebook.svg" alt="" />
+            <a href="#" class="social--link">
+              <ion-icon name="logo-facebook" class="icon"></ion-icon>
+            </a>
           </li>
+
           <li class="social--icon">
-            <img src="./images/icon-instagram.svg" alt="" />
+            <a href="#" class="social--link">
+              <ion-icon name="logo-instagram" class="icon"></ion-icon>
+            </a>
           </li>
+
           <li class="social--icon">
-            <img src="./images/icon-twitter.svg" alt="" />
+            <a href="#" class="social--link">
+              <ion-icon name="logo-twitter" class="icon"></ion-icon>
+            </a>
           </li>
+
           <li class="social--icon">
-            <img src="./images/icon-pinterest.svg" alt="" />
+            <a href="#" class="social--link">
+              <ion-icon name="logo-pinterest" class="icon"></ion-icon>
+            </a>
           </li>
         </ul>
       </footer>
     </main>
 
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by <a href="#">Yoga Budiman</a>.
+    </div>
   </body>
 </html>
