@@ -198,6 +198,7 @@
   }
 
   .gallery--picture-mobile {
+    height: 25rem;
     width: 50vw;
     display: block;
     object-fit: cover;
