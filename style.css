@@ -102,6 +102,10 @@ body {
   background-color: hsl(200, 100%, 72%);
 }
 
+.btn-mobile-nav {
+  display: none;
+}
+
 /* HERO SECTION */
 .hero-section {
   place-items: center;
