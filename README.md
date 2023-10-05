@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/ygabdn29/sunnyside-landing-page)
-- Live Site URL: ()
+- Live Site URL: (https://ygabdn29.github.io/sunnyside-landing-page/)
 
 ## My process
 
@@ -51,6 +51,7 @@ Users should be able to:
 ### Continued development
 
 - Adding more breakpoints so the design stays consistent in wider array of screen sizes
+- Some spacing and color could be more accurate to the design
 
 ### Useful resources
 
